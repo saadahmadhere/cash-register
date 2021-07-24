@@ -5,9 +5,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+:root{
+  --bg-color: #F7F6C5;
+  --font-color: #0107CB;
+  /* --heading-font: 'Roboto'; */
+  --font-color-2: #018ECB;
+}
+
+.App{
+  max-width: 600px;
+  margin: auto;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+h1{
+  margin-top: 0;
+  color: var(--font-color);
+  font-weight: 600;
+
+}
+
+p{
+  color:var(--font-color);
+  font-size: larger;
+}
+
+h2{
+  color: var(--font-color-2);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+input{
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.next-btn{
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4447DB;
+  border-radius: 5px;
+  border: none;
+  color:#faf9db ;
+}
+
+.next-btn:hover{
+  cursor: pointer;
+  background-color: #6C66DB;
 }
