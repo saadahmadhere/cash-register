@@ -13,11 +13,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 :root{
   --bg-color: #F7F6C5;
   --font-color: #0107CB;
-  /* --heading-font: 'Roboto'; */
+  --button-text-color: #faf9db;
   --font-color-2: #018ECB;
+  --button-bg: #4447DB;
+  --button-bg-hover: #6C66DB;
+  --table-bg: #F8EF9A;
+  --table-border: #f0e584;
 }
 
 .App{
@@ -58,13 +63,30 @@ input{
   margin: 1rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #4447DB;
+  background-color: var(--button-bg);
   border-radius: 5px;
   border: none;
-  color:#faf9db ;
+  color: var(--button-text-color)
 }
 
 .next-btn:hover{
   cursor: pointer;
-  background-color: #6C66DB;
+  background-color: var(--button-bg-hover)
+}
+table{
+  width: 100%;
+  table-layout: fixed;
+}
+
+table, th, td {
+  padding: 0.2rem;
+  color: var(--font-color-2);
+  background-color: var(--table-bg);
+  border: 2px solid var(--table-border);
+  border-collapse: collapse;
+}
+
+.noOfNotes {
+  background-color: white;
+  font-weight: bold;
 }
