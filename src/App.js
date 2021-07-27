@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App">
       <Home/>
-      <input type="number" value={bill} onInput={billChange} autoFocus/>
-      {nextClicked ? <CashGiven bill={bill}/> : <button className="next-btn" onClick={nextButtonHandler}>Next</button>}
+      <input type="number" value={ bill } onInput={ billChange } autoFocus/>
+      {nextClicked ? <CashGiven bill={ bill }/> : <button className="next-btn" onClick={ nextButtonHandler }>Next</button>}
     </div>
   );
 }

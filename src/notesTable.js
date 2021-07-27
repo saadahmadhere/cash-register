@@ -24,13 +24,13 @@ const NotesTable = ({remainingAmt: change}) => {
                     <tr>
                         <th>No. of Notes</th>
                         {numberOfNotes.map((cell, index) => (
-                            <td className="noOfNotes" key={index}>{cell === 0 ? "": cell }</td>
+                            <td className="noOfNotes" key={ index }>{ cell === 0 ? "": cell }</td>
                         ))}
                     </tr>
                     <tr>
                         <th>Note</th>
                         {notes.map((cell, index) =>(
-                            <td key= {index}>{cell}</td>
+                            <td key= { index }> { cell } </td>
                         ))}
                     </tr>
                 </tbody>

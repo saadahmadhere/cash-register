@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NotesTable from './notesTable';
 
-const CashGiven = ({bill}) => {
+const CashGiven = ({ bill }) => {
    
    const [cash, setCash] = useState("");
    const [checkClicked, setCheckClicked] = useState(false);
@@ -19,10 +19,9 @@ const CashGiven = ({bill}) => {
      <div className="after-next">
         <h2>Cash Given:</h2>
         <input type="number" onInput={cashHandler} autoFocus/>
-        
         <button className="next-btn" onClick={checkButtonHandler}>Check</button>
         {checkClicked ? (remainingAmt>=0 ?
-                                          <NotesTable remainingAmt={remainingAmt}/>
+                                          <NotesTable remainingAmt={ remainingAmt }/>
                                           :<div>
                                                 <p>Cash is less than bill, please enter the right amount.</p>
                                            </div>) 
