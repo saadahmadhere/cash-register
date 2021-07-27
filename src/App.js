@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import CashGiven from './cashGiven';
+import Home from './home';
 
 function App() {
 
@@ -16,12 +17,9 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Cash Register Manager</h1>
-      <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-      <h2>Bill Amount:</h2>
+      <Home/>
       <input type="number" value={bill} onInput={billChange} autoFocus/>
       {nextClicked ? <CashGiven bill={bill}/> : <button className="next-btn" onClick={nextButtonHandler}>Next</button>}
-     
     </div>
   );
 }

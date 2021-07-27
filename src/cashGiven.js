@@ -27,7 +27,6 @@ const CashGiven = ({bill}) => {
                                                 <p>Cash is less than bill, please enter the right amount.</p>
                                            </div>) 
                       :null }
-
      </div> );
 }
  
