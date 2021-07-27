@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import AfterNext from './AfterNext';
+import CashGiven from './cashGiven';
 
 function App() {
 
@@ -16,11 +16,11 @@ function App() {
   
   return (
     <div className="App">
-      <h1>hello</h1>
+      <h1>Cash Register Manager</h1>
       <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
       <h2>Bill Amount:</h2>
-      <input type="text" value={bill} onInput={billChange}/>
-      {nextClicked ? <AfterNext bill={bill}/> : <button className="next-btn" onClick={nextButtonHandler}>Next</button>}
+      <input type="number" value={bill} onInput={billChange} autoFocus/>
+      {nextClicked ? <CashGiven bill={bill}/> : <button className="next-btn" onClick={nextButtonHandler}>Next</button>}
      
     </div>
   );
