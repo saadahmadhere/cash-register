@@ -17,8 +17,8 @@ const CashGiven = ({ bill }) => {
 
     return ( 
      <div className="after-next">
-        <h2>Cash Given:</h2>
-        <input type="number" onInput={cashHandler} autoFocus/>
+        <label htmlFor="cash">Cash Given</label>
+        <input id="cash" type="number" onInput={cashHandler} autoFocus/>
         <button className="next-btn" onClick={checkButtonHandler}>Check</button>
         {checkClicked ? (remainingAmt>=0 ?
                                           <NotesTable remainingAmt={ remainingAmt }/>
