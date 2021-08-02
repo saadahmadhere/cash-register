@@ -11,7 +11,6 @@ function App() {
 
   const billChange = (e) =>{
     setBill(e.target.value);  
-    console.log(typeof e.target.value);
   }
 
   const nextButtonHandler = () =>{
