@@ -91,3 +91,10 @@ table, th, td {
   background-color: white;
   font-weight: bold;
 }
+
+.alert{
+  /* text-align: center;
+  align-content: center;
+  align-items: center; */
+  justify-content: center;
+}
