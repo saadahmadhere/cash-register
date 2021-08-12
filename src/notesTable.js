@@ -4,7 +4,6 @@ const NotesTable = ({remainingAmt: change}) => {
     let divisor,quo,iteration;
 
     while(change>0){
-        // divisor = notes.filter(num => (num <= change))
         for(let j=0; j<notes.length; j++){
             if(change >= notes[j]){
                 divisor = notes[j];

@@ -15,7 +15,6 @@ const CashGiven = ({ bill }) => {
 
    const checkButtonHandler = () =>{
       
-      // console.log({Number(cash),Number(bill)})
       if(Number(cash) > 0 && Number(bill) > 0 && !isNaN(cash)){
          
          if(Number(cash) === Number(bill)){

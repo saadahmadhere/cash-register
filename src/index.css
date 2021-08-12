@@ -93,8 +93,5 @@ table, th, td {
 }
 
 .alert{
-  /* text-align: center;
-  align-content: center;
-  align-items: center; */
   justify-content: center;
 }
