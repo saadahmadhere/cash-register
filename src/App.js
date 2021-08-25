@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import CashGiven from './cashGiven';
 import Home from './home';
+import Footer from './Footer'
 
 function App() {
 
@@ -25,13 +26,16 @@ function App() {
   
   return (
     <div className="App">
-      <Home/>
-      <label htmlFor="bill">Bill Amount:</label>
-      <input id="bill" type="number" value={ bill } onInput={ billChange } autoFocus/>
-      {nextClicked ? <CashGiven bill={ bill }/> : <button className="next-btn" onClick={ nextButtonHandler }>Next</button>}
-      <div className="alert" style ={{display: `${showAlertMessage}`}} >
-        <h2>Enter valid bill amount</h2>
+      <div className="main">
+        <Home/>
+        <label htmlFor="bill">Bill Amount:</label>
+        <input id="bill" type="number" value={ bill } onInput={ billChange } autoFocus/>
+        {nextClicked ? <CashGiven bill={ bill }/> : <button className="next-btn" onClick={ nextButtonHandler }>Next</button>}
+        <div className="alert" style ={{display: `${showAlertMessage}`}} >
+          <h2>Enter valid bill amount</h2>
+        </div>
       </div>
+      <Footer/>
     </div>
   );
 }
